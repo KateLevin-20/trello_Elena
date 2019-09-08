@@ -5,6 +5,16 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../KL-QA-21-class/first-project" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../KL-QA-21-class/first-project" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/trello-web" />
         <option name="gradleHome" value="C:/Tools/gradle-5.4.1" />
         <option name="modules">

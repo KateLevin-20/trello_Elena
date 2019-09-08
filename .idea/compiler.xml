@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="first-project.main" target="1.8" />
+      <module name="first-project.test" target="1.8" />
+      <module name="Lena.trello-web.main" target="1.8" />
+      <module name="Lena.trello-web.test" target="1.8" />
       <module name="trello-web.main" target="1.8" />
       <module name="trello-web.test" target="1.8" />
     </bytecodeTargetLevel>

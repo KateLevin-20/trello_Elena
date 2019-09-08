@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -88,5 +89,36 @@ driver.quit();
 
   public void confirmBoardCreation() {
     click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
+  }
+
+  public String getTeamNameFromTeamPage() {
+    return driver.findElement(By.cssSelector("")).getText();
+  }
+
+  public void returnToHomePage() throws InterruptedException {
+    Thread.sleep(3000);
+    click(By.cssSelector("[href='/']"));
+    click(By.cssSelector("[href='/']"));
+  }
+
+  public int getAfter() {
+    click(By.cssSelector("a[href=/]"));
+    return getTeamsCount();
+  }
+
+  public int getTeamsCount() {
+    return driver.findElements(By.xpath("//div[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
+  }
+
+  @Test(enabled=false)
+  public void testTeamCuncellCreationFromPlusButtonOnHeader(){
+    clickOnPlusButtonOnHeader();
+    selectCreateTeamFromDropDown();
+    fillTeamCreationForm("qa21", "descr qa 21");
+    clickXButton();
+  }
+
+  public void clickXButton() {
+
   }
 }

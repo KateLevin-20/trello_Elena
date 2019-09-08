@@ -1,12 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.qa.TeamCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-04T14:01:11" hostname="Lena-Toshiba" time="4.536">
+<testsuite name="com.trello.qa.TeamCreationTests" tests="2" skipped="1" failures="1" errors="0" timestamp="2019-09-07T11:28:14" hostname="LAPTOP-0PPAN3RT" time="17.042">
   <properties/>
-  <testcase name="testTeamCreation" classname="com.trello.qa.TeamCreationTests" time="4.536"/>
+  <testcase name="setUp" classname="com.trello.qa.TeamCreationTests" time="17.025">
+    <failure message="org.openqa.selenium.SessionNotCreatedException: session not created&#10;from chrome not reachable&#10;  (Session info: chrome=76.0.3809.132)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-0PPAN3RT', ip: '10.0.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;&#9;Ordinal0 [0x01007C93+1473683]&#10;&#9;Ordinal0 [0x00F8ADB1+961969]&#10;&#9;Ordinal0 [0x00F1418C+475532]&#10;&#9;Ordinal0 [0x00F0DB1A+449306]&#10;&#9;Ordinal0 [0x00F0E1B8+451000]&#10;&#9;Ordinal0 [0x00F0F2C5+455365]&#10;&#9;Ordinal0 [0x00F0B4C5+439493]&#10;&#9;Ordinal0 [0x00F14F40+479040]&#10;&#9;Ordinal0 [0x00EC98FE+170238]&#10;&#9;Ordinal0 [0x00EC8D1D+167197]&#10;&#9;Ordinal0 [0x00EC742B+160811]&#10;&#9;Ordinal0 [0x00EB0AE6+68326]&#10;&#9;Ordinal0 [0x00EB1BF0+72688]&#10;&#9;Ordinal0 [0x00EB1B89+72585]&#10;&#9;Ordinal0 [0x00FA4B77+1067895]&#10;&#9;GetHandleVerifier [0x010A6875+506677]&#10;&#9;GetHandleVerifier [0x010A6610+506064]&#10;&#9;GetHandleVerifier [0x010AD1B8+533624]&#10;&#9;GetHandleVerifier [0x010A704A+508682]&#10;&#9;Ordinal0 [0x00F9C266+1032806]&#10;&#9;Ordinal0 [0x00F9C0DF+1032415]&#10;&#9;Ordinal0 [0x00FA6A8B+1075851]&#10;&#9;Ordinal0 [0x00FA6BF3+1076211]&#10;&#9;Ordinal0 [0x00FA5BA5+1072037]&#10;&#9;BaseThreadInitThunk [0x76446359+25]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77B47A94+228]&#10;&#9;RtlGetAppContainerNamedObjectPath [0x77B47A64+180]&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-0PPAN3RT', ip: '10.0.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01007C93+1473683]
+	Ordinal0 [0x00F8ADB1+961969]
+	Ordinal0 [0x00F1418C+475532]
+	Ordinal0 [0x00F0DB1A+449306]
+	Ordinal0 [0x00F0E1B8+451000]
+	Ordinal0 [0x00F0F2C5+455365]
+	Ordinal0 [0x00F0B4C5+439493]
+	Ordinal0 [0x00F14F40+479040]
+	Ordinal0 [0x00EC98FE+170238]
+	Ordinal0 [0x00EC8D1D+167197]
+	Ordinal0 [0x00EC742B+160811]
+	Ordinal0 [0x00EB0AE6+68326]
+	Ordinal0 [0x00EB1BF0+72688]
+	Ordinal0 [0x00EB1B89+72585]
+	Ordinal0 [0x00FA4B77+1067895]
+	GetHandleVerifier [0x010A6875+506677]
+	GetHandleVerifier [0x010A6610+506064]
+	GetHandleVerifier [0x010AD1B8+533624]
+	GetHandleVerifier [0x010A704A+508682]
+	Ordinal0 [0x00F9C266+1032806]
+	Ordinal0 [0x00F9C0DF+1032415]
+	Ordinal0 [0x00FA6A8B+1075851]
+	Ordinal0 [0x00FA6BF3+1076211]
+	Ordinal0 [0x00FA5BA5+1072037]
+	BaseThreadInitThunk [0x76446359+25]
+	RtlGetAppContainerNamedObjectPath [0x77B47A94+228]
+	RtlGetAppContainerNamedObjectPath [0x77B47A64+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.trello.qa.TestBase.setUp(TestBase.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <testcase name="testTeamCreationFromPlusButtonOnHeader" classname="com.trello.qa.TeamCreationTests" time="0.0">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 9542
+  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 44624
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-Sep 04, 2019 5:01:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+[1567855699.532][WARNING]: Timed out connecting to Chrome, retrying...
+[1567855703.532][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
 </testsuite>
